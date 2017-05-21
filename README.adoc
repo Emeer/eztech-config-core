@@ -1,0 +1,14 @@
+# Config samples
+
+This repository contains a sample configuration to be used with this
+https://github.com/snicoll-demos/spring-cloud-intro-conference[sample project]. Each step in the demonstration is
+materialized by a branch (see `step1` to `step3`).
+
+To use this configuration on your own config server, add the following to your configuration
+
+```
+spring.cloud.config.server.git.uri=https://github.com/snicoll-demos/spring-cloud-intro-conference-config.git
+
+# Use a specifc step rather than `master`
+#spring.cloud.config.server.default-label=step3
+```
